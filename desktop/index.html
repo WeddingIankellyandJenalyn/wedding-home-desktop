@@ -293,8 +293,8 @@ document.getElementById("youTubeButton").onclick = function() {
       this.textContent = isDesktop ? 'Switch to Mobile View' : 'Switch to Desktop View';
 
       // Redirect based on current view
-      const desktopURL = "https://weddingiankellyandjenalyn.github.io/Wedding-Invitation/desktop";
-      const mobileURL = "https://weddingiankellyandjenalyn.github.io/Wedding-Invitation/mobile";
+      const desktopURL = "https://weddingiankellyandjenalyn.github.io/wedding-home-desktop/desktop/index.html";
+      const mobileURL = "https://weddingiankellyandjenalyn.github.io/wedding-home-desktop/desktop/index.html";
 
       window.location.href = isDesktop ? desktopURL : mobileURL;
     });
@@ -345,10 +345,10 @@ document.getElementById("youTubeButton").onclick = function() {
         document.getElementById('toggleView').addEventListener('click', function() {
             isDesktop = !isDesktop;
             if (isDesktop) {
-                window.location.href = 'https://www.example.com/desktop'; // Link to desktop version
+                window.location.href = 'https://weddingiankellyandjenalyn.github.io/wedding-home-desktop/desktop/index.html'; // Link to desktop version
                 this.textContent = 'Switch to Mobile View';
             } else {
-                window.location.href = 'https://www.example.com/mobile'; // Link to mobile version
+                window.location.href = 'https://weddingiankellyandjenalyn.github.io/wedding-home-desktop/desktop/index.html'; // Link to mobile version
                 this.textContent = 'Switch to Desktop View';
             }
         });
@@ -356,3 +356,4 @@ document.getElementById("youTubeButton").onclick = function() {
 
 </body>
 </html>
+
