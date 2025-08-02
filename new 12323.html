@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop/Mobile Switcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Site</h1>
+    <button id="toggleView">Switch to Desktop View</button>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop/Mobile Switcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Site</h1>
+    <button id="toggleView">Switch to Desktop View</button>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+ body {
+            
+           background-color:  #fffaf5; /* sage green color */
+        }
+		
+		 button {
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            background-color: #7fb5a8;
+            color: white;
+            cursor: pointer;
+        }
+		  buttons {
+            padding: 5px 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #7fb5a8;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #6da69d;
+        }
+		
+		
+        .container {
+            background: #87ae73;
+			color: white;
+			opacity: 0.80;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+			 
+            align-items: center;
+			
+			border-radius: 10px;
+			margin-top: 15%;
+			margin-right: auto;
+			margin-bottom: auto;
+			margin-left: auto;
+			animation: moveUp 2s infinite alternate;
+        }
+		
+			 @keyframes moveUp {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 980px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+   
+  top: 100%;
+  border: 2px solid green;
+  width: auto;
+  padding: 20px;
+  margin-top: auto;
+  margin-right: auto;
+   margin-left: auto;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+opacity: 
+  background-color:white;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+h2 {
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+ <H2><center><button id="youTubeButton">HOME</button></center></H2>
+
+<div class="mySlides fade">
+  
+  <img src="https://i.ibb.co/RGCZZLP1/1.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="https://i.ibb.co/G4zHy6d8/2.jpg" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+
+  <img src="https://i.ibb.co/nq1dRX7t/3.jpg" style="width:100%">
+  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<div class="container"><h2><center>Wait for loading</h2><div class="arrow"></div></div></ccenter>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+  // Auto slide
+            function startAutoSlide() {
+                clearInterval(interval);
+                interval = setInterval(nextSlide, 10000);
+            }
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+document.getElementById("youTubeButton").onclick = function() {
+        window.location.href = "https://weddingiankellyandjenalyn.github.io/wedding-home/";
+    };
+</script>
+
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script>
+  let isDesktop = false;
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.getElementById('toggleView');
+    if (!toggleButton) return;
+
+    toggleButton.addEventListener('click', function () {
+      isDesktop = !isDesktop;
+
+      // Update button text
+      this.textContent = isDesktop ? 'Switch to Mobile View' : 'Switch to Desktop View';
+
+      // Redirect based on current view
+      const desktopURL = "https://weddingiankellyandjenalyn.github.io/Wedding-Invitation/desktop";
+      const mobileURL = "https://weddingiankellyandjenalyn.github.io/Wedding-Invitation/mobile";
+
+      window.location.href = isDesktop ? desktopURL : mobileURL;
+    });
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let isDesktop = false;
+
+        document.getElementById('toggleView').addEventListener('click', function() {
+            isDesktop = !isDesktop;
+            if (isDesktop) {
+                window.location.href = 'https://www.example.com/desktop'; // Link to desktop version
+                this.textContent = 'Switch to Mobile View';
+            } else {
+                window.location.href = 'https://www.example.com/mobile'; // Link to mobile version
+                this.textContent = 'Switch to Desktop View';
+            }
+        });
+    </script>
+
+</body>
+</html>
